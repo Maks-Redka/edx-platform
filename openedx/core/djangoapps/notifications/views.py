@@ -27,7 +27,8 @@ from .events import (
     notification_preference_update_event,
     notification_preferences_viewed_event,
     notification_read_event,
-    notifications_app_all_read_event, notification_tray_opened_event,
+    notification_tray_opened_event,
+    notifications_app_all_read_event
 )
 from .models import Notification
 from .serializers import (
@@ -36,7 +37,7 @@ from .serializers import (
     UserCourseNotificationPreferenceSerializer,
     UserNotificationPreferenceUpdateSerializer
 )
-from .utils import filter_course_wide_preferences, get_show_notifications_tray
+from .utils import filter_course_wide_preferences, get_show_notifications_tray, remove_preferences_with_no_access
 
 
 @allow_any_authenticated_user()
@@ -184,6 +185,7 @@ class UserNotificationPreferenceView(APIView):
         serializer = UserCourseNotificationPreferenceSerializer(user_preference)
         notification_preferences_viewed_event(request, course_id)
         preferences = filter_course_wide_preferences(course_id, serializer.data)
+        preferences = remove_preferences_with_no_access(preferences, request.user)
         return Response(preferences)
 
     def patch(self, request, course_key_string):
