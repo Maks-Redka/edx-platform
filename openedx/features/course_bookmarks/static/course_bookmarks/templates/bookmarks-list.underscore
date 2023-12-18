@@ -34,7 +34,7 @@
         <% }); %>
     </div>
 
-    <div class="paging-footer"></div>
+    <div class="paging-footer"><p>openedx\features\course_bookmarks\static\course_bookmarks\templates\bookmarks-list.underscore</p></div>
 
 <% } else {%>
 
