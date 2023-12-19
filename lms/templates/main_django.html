@@ -47,6 +47,7 @@
     {% load render_bundle from webpack_loader %}
     {% render_bundle "commons" %}
   <div class="window-wrap" dir="{{LANGUAGE_BIDI|yesno:'rtl,ltr'}}">
+    <p>lms\templates\main_django.html</p>
     <a class="nav-skip" href="#main">{% trans "Skip to main content" as tmsg %} | {{ tmsg | force_escape }}</a>
     {% with course=request.course %}
       {% include "header.html"|microsite_template_path with online_help_token=online_help_token  %}
