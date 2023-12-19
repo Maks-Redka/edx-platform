@@ -1,5 +1,7 @@
 <div class="discussion-article view-discussion-home">
   <section class="home-header">
+    <p>lms\djangoapps\discussion\static\discussion\templates\discussion-home.underscore</p>
+
     <span class="label"><%- gettext("Discussion Home") %></span>
     <% if (window.courseName) { %>
       <h2 class="home-title"><%- window.courseName %></h2>

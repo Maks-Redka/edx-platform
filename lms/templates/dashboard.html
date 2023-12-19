@@ -31,6 +31,7 @@ from common.djangoapps.student.models import CourseEnrollment
 <%block name="bodyclass">view-dashboard is-authenticated</%block>
 
 <%block name="header_extras">
+<p>lms\templates\dashboard.html</p>
 % for template_name in ["donation"]:
 <script type="text/template" id="${template_name}-tpl">
   <%static:include path="dashboard/${template_name}.underscore" />
@@ -349,6 +350,8 @@ from common.djangoapps.student.models import CourseEnrollment
     </button>
 
     <header>
+      <p>lms\templates\dashboard.html</p>
+
       <h2 id="email-settings-title">
         ${Text(_("Email Settings for {course_number}")).format(course_number=HTML('<span id="email_settings_course_number"></span>'))}
         <span class="sr">,
@@ -380,6 +383,8 @@ from common.djangoapps.student.models import CourseEnrollment
     </button>
 
     <header class="unenroll-header">
+      <p>lms\templates\dashboard.html</p>
+
       <h2 id="unenrollment-modal-title">
         <span id='track-info'></span>
         <span id='refund-info'></span>

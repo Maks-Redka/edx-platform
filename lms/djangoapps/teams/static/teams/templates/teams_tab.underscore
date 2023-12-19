@@ -6,7 +6,9 @@
         </div>
     </div>
 </div>
-<div class="teams-header"></div>
+<div class="teams-header">
+    <p>lms\djangoapps\teams\static\teams\templates\teams_tab.underscore</p>
+</div>
 <div class="teams-instructor-tools-bar"></div>
 <div class="teams-main">
     <div class="page-content"></div>

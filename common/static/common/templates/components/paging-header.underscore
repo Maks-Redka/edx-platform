@@ -8,6 +8,7 @@
     <% if (showSortControls) { %>
       |
       <span class="field listing-sort">
+        <p>common\static\common\templates\components\paging-header.underscore</p>
           <label class="field-label" for="paging-header-select"><%- gettext("Sorted by") %></label>
           <select id="paging-header-select" name="paging-header-select" class="field-input input-select listing-sort-select">
               <% _.each(sortableFields, function (option, key) { %>

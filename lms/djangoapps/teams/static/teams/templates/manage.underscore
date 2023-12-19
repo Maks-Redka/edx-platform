@@ -1,6 +1,8 @@
 <div class="team-management">
     <div class="page-content-main">
         <div class="team-management-section">
+            <p>lms\djangoapps\teams\static\teams\templates\manage.underscore</p>
+
             <h3 class="team-detail-header">
                 <%- gettext("View Current Team Memberships") %>
             </h3>
@@ -18,6 +20,8 @@
             </button>
         </div>
         <div id="team-management-assign" class="team-management-section">
+            <p>lms\djangoapps\teams\static\teams\templates\manage.underscore</p>
+
             <h3 class="team-detail-header">
                 <%- gettext("Assign Team Memberships") %>
             </h3>

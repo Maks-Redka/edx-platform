@@ -1,4 +1,7 @@
 <div class="sr-is-focusable sr-topics-view" tabindex="-1" aria-label="Tab content"></div>
-<div class="topics-paging-header"></div>
+<div class="topics-paging-header">
+    <p>lms\djangoapps\teams\static\teams\templates\topics.underscore</p>
+
+</div>
 <div class="topics-list"></div>
 <div class="topics-paging-footer"><p>lms\djangoapps\teams\static\teams\templates\topics.underscore</p></div>

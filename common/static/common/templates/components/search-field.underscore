@@ -1,4 +1,5 @@
 <div class="page-header-search wrapper-search-<%- type %>">
+    <p>common\static\common\templates\components\search-field.underscore</p>
     <form class="search-form">
         <div class="wrapper-search-input">
             <label for="search-<%- type %>" class="search-label"><%- searchLabel %></label>

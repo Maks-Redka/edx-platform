@@ -25,6 +25,7 @@
             </div>
             <% if (can_create_comment && !readOnly) { %>
             <form class="discussion-reply-new" data-id="<%- id %>">
+                <p>common\static\common\templates\discussion\templates.underscore</p>
                 <h<%- startHeader %> class="add-response"><%- gettext("Add a response:") %></h<%- startHeader %> >
 
                 <ul class="discussion-errors"></ul>
@@ -41,6 +42,7 @@
 <script aria-hidden="true" type="text/template" id="thread-show-template">
 <div class="discussion-post">
     <header class="post-header">
+        <p>common\static\common\templates\discussion\templates.underscore</p>
         <% if (!readOnly) { %>
             <div class="post-header-actions">
                 <%= /* xss-lint: disable=underscore-not-escaped */
@@ -58,6 +60,7 @@
             </div>
         <% } %>
         <div class="post-header-content">
+            <p>common\static\common\templates\discussion\templates.underscore</p>
             <h<%- startHeader %> class="post-title"><%- title %></h<%- startHeader%>>
             <p data-hj-suppress class="posted-details">
             <%
@@ -128,7 +131,9 @@
 </div>
 </script>
 <script aria-hidden="true" type="text/template" id="thread-edit-template">
-<h<%- startHeader%> class="thread-title"><%- gettext("Editing post") %></h<%- startHeader%>>
+<h<%- startHeader%> class="thread-title"><%- gettext("Editing post") %>
+<p>common\static\common\templates\discussion\templates.underscore</p>
+</h<%- startHeader%>>
 <ul class="post-errors"></ul>
 <div class="forum-edit-post-form-wrapper"></div>
 <div class="post-field">
@@ -174,6 +179,7 @@
 </script>
 <script aria-hidden="true" type="text/template" id="thread-response-show-template">
 <header class="response-header">
+    <p>common\static\common\templates\discussion\templates.underscore</p>
   <div data-hj-suppress class="response-header-content">
     <%= HtmlUtils.HTML(author_display) %>
     <p class="posted-details">
@@ -220,6 +226,7 @@
       </div>
       </div>
       <div class="response-header-actions">
+        <p>common\static\common\templates\discussion\templates.underscore</p>
         <%= /* xss-lint: disable=underscore-not-escaped */
             _.template(
                 $('#forum-actions').html())(
@@ -239,7 +246,10 @@
 </script>
 <script aria-hidden="true" type="text/template" id="thread-response-edit-template">
 <div class="edit-post-form">
-    <h<%- startHeader %>><%- gettext("Editing response") %></h<%- startHeader %>>
+    <h<%- startHeader %>><%- gettext("Editing response") %>
+        <p>common\static\common\templates\discussion\templates.underscore</p>
+
+    </h<%- startHeader %>>
     <ul class="edit-post-form-errors"></ul>
       <div class="edit-post-body" name="body" data-id="<%- id %>"><%- body %></div>
     <button type="submit" id="edit-response-submit"class="btn btn-primary post-update"><%- gettext("Update response") %></button>
@@ -422,7 +432,9 @@
 </script>
 <script aria-hidden="true" type="text/template" id="new-post-template">
 <form class="forum-new-post-form">
-    <h<%- startHeader %> class="thread-title"><%- gettext("Add a Post") %></h<%- startHeader %>>
+    <h<%- startHeader %> class="thread-title"><%- gettext("Add a Post") %>
+        <p>common\static\common\templates\discussion\templates.underscore</p>
+    </h<%- startHeader %>>
 
     <% if (mode === 'inline') { %>
         <button class="btn btn-outline-primary btn-default add-post-cancel">
@@ -616,6 +628,7 @@
 <article class="discussion-article" data-id="<%- id %>">
     <div class="discussion-post">
         <header>
+            <p>common\static\common\templates\discussion\templates.underscore</p>
             <h3><%- title %></h3>
             <p class="posted-details">
                 <% if (user) { %>
@@ -871,6 +884,7 @@
             <span class='icon fa fa-times' aria-hidden='true'></span>
         </button>
         <header>
+            <p>common\static\common\templates\discussion\templates.underscore</p>
             <h2/></h2>
             <hr/>
         </header>
