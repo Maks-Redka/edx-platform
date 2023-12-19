@@ -2,6 +2,7 @@
 Comprehensive Theming
 #####################
 
+test
 
 Comprehensive Theming lets you customize the appearance of your Open edX
 installation.  You can override Sass and CSS settings, images, or entire HTML
