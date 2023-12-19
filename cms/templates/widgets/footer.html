@@ -12,7 +12,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
 <div class="wrapper-footer wrapper">
   <footer class="primary" role="contentinfo">
-
+    <p>cms\templates\widgets\footer.html</p>
     <div class="footer-content-primary">
       <div class="colophon">
         <p>&copy; ${datetime.now(pytz.timezone(settings.TIME_ZONE)).year} <a href="${marketing_link('ROOT')}" rel="external">${settings.PLATFORM_NAME}</a>.</p>
@@ -55,6 +55,7 @@ from openedx.core.djangolib.markup import HTML, Text
       </div>
 
       <div class="footer-about-openedx">
+        <p>cms\templates\widgets\footer.html</p>
         <a href="https://open.edx.org" title="${_("Powered by Open edX")}">
           <img alt="${_("Powered by Open edX")}" src="https://logos.openedx.org/open-edx-logo-tag.png">
         </a>

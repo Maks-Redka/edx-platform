@@ -66,5 +66,6 @@
         </section>
     </div>
     <footer>
+        <p>cms\templates\js\mock\mock-course-outline-page.underscore</p>
     </footer>
 </div>

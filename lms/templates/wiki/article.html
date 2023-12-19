@@ -44,5 +44,6 @@
 {% endblock %}
 
 {% block footer_prepend %}
+  <p>lms\templates\wiki\article.html</p>
   <p><em>{% trans "This article was last modified:" as tmsg %} | {{tmsg | force_escape}} {{ article.current_revision.modified }}</em></p>
 {% endblock %}

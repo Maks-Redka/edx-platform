@@ -30,6 +30,7 @@
 </div>
 
 <footer class="reference">
+    <p>lms\templates\edxnotes\note-item.underscore</p>
     <div class="wrapper-reference-content">
         <p class="reference-title"><%- gettext("Noted in:") %></p>
         <% if (unit.url) { %>

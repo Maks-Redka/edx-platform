@@ -60,7 +60,9 @@
         <tbody id="asset-table-body"></tbody>
     </table>
 
-    <div id="asset-paging-footer"></div>
+    <div id="asset-paging-footer">
+        <p>cms\templates\js\asset-library.underscore</p>
+    </div>
 </div>
 
 <div class="no-asset-content">

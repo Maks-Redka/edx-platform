@@ -39,6 +39,8 @@
     </div>
 
     <div class="u-field-footer">
+        <p>lms\templates\fields\field_textarea.underscore</p>
+
         <% if (messagePosition === 'footer') { %>
             <span class="u-field-message" id="u-field-message-<%- id %>">
                 <span class="u-field-message-notification" aria-live="polite"></span>

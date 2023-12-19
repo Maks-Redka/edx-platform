@@ -13,6 +13,8 @@
         <span class="course-video-settings-title"><%- gettext('Course Video Settings') %></span>
         <div class='transcript-preferance-wrapper transcript-provider-wrapper'></div>
         <div class='course-video-settings-content'></div>
-        <div class='course-video-settings-footer'></div>
+        <div class='course-video-settings-footer'>
+            <p>cms\templates\js\course-video-settings.underscore</p>
+        </div>
     </div>
 </div>

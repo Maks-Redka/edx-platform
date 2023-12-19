@@ -223,6 +223,8 @@
                     </div>
                 </article>
             </section>
-        <div class="container-paging-footer"></div>
+        <div class="container-paging-footer">
+            <p>cms\templates\js\mock\mock-paged-container-xblock.underscore</p>
+        </div>
     </div>
 </article>

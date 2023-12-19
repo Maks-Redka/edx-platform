@@ -13,6 +13,7 @@
 % if uses_bootstrap:
   <div class="container-fluid wrapper-footer">
     <footer>
+      <p>lms\templates\footer.html</p>
       <div class="row">
         <div class="col-md-9">
           <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
@@ -83,6 +84,7 @@
   </div>
 % else:
   <div class="wrapper wrapper-footer">
+    <p>lms\templates\footer.html</p>
     <footer id="footer-openedx" class="grid-container"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
@@ -91,6 +93,7 @@
         dir=${bidi}
       % endif
     >
+    <p>lms\templates\footer.html</p>
       <div class="colophon">
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol>
